@@ -80,6 +80,7 @@ class redLayer(QgsMapTool):
         self.toolbar = self.iface.addToolBar(u'redLayer')
         self.toolbar.setObjectName(u'redLayer')
         QgsMapTool.__init__(self, self.canvas)
+        self.gestures=0
 
     # noinspection PyMethodMayBeStatic
     def tr(self, message):
